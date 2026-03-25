@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1200px;
+    height: 480px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    display: flex;
+    align-items: center;
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+    overflow: hidden;
+    position: relative;
+  }
+  .bg-pattern {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image:
+      radial-gradient(circle at 20% 80%, rgba(72, 202, 228, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(168, 130, 255, 0.08) 0%, transparent 50%);
+  }
+  .left {
+    position: relative;
+    z-index: 1;
+    width: 620px;
+    padding-left: 50px;
+  }
+  .right {
+    position: relative;
+    z-index: 1;
+    width: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tag {
+    display: inline-block;
+    background: rgba(72, 202, 228, 0.15);
+    border: 1px solid rgba(72, 202, 228, 0.3);
+    color: #48cae4;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px 16px;
+    border-radius: 20px;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
+  }
+  h1 {
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 1.4;
+    margin-bottom: 18px;
+    letter-spacing: -0.5px;
+  }
+  h1 .accent {
+    color: #48cae4;
+  }
+  .subtitle {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .terminal {
+    width: 420px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 22px;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #a0a0a0;
+  }
+  .terminal-header {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 14px;
+  }
+  .dot { width: 11px; height: 11px; border-radius: 50%; }
+  .dot-red { background: #ff5f56; }
+  .dot-yellow { background: #ffbd2e; }
+  .dot-green { background: #27c93f; }
+  .terminal .prompt { color: #27c93f; }
+  .terminal .cmd { color: #e0e0e0; }
+  .terminal .output { color: #48cae4; }
+</style>
+</head>
+<body>
+  <div class="bg-pattern"></div>
+  <div class="left">
+    <div class="tag">Claude Code × ITコンサル</div>
+    <h1>
+      <span class="accent">自腹3万円</span>で試して確信した<br>
+      若手の仕事は<span class="accent">なくなる</span>
+    </h1>
+    <div class="subtitle">Miro自動操作 / Excel定義書生成 / ドキュメント読み解き</div>
+  </div>
+  <div class="right">
+    <div class="terminal">
+      <div class="terminal-header">
+        <div class="dot dot-red"></div>
+        <div class="dot dot-yellow"></div>
+        <div class="dot dot-green"></div>
+      </div>
+      <div><span class="prompt">$</span> <span class="cmd">claude</span></div>
+      <div><span class="output">> Miroのフローに電子署名ステップを追加して</span></div>
+      <div style="margin-top: 6px;">Miro API取得中...</div>
+      <div>フロー構造を解析...</div>
+      <div>スクリプト生成完了</div>
+      <div style="color: #27c93f; margin-top: 4px;">✓ 完了（30分 → 従来2〜3時間）</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -17,7 +17,18 @@
       "Bash(powershell.exe -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\kawas\\\\Documents\\\\claude-code-for-it-consulting\\\\clip_utf8.ps1\" -File \"C:\\\\Users\\\\kawas\\\\Documents\\\\claude-code-for-it-consulting\\\\tweet_draft.txt\")",
       "Bash(powershell.exe -ExecutionPolicy Bypass -Command \"Get-Clipboard | Out-File -Encoding utf8 C:\\\\Users\\\\kawas\\\\Documents\\\\claude-code-for-it-consulting\\\\clipboard_verify.txt\")",
       "Bash(powershell.exe -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\kawas\\\\.claude\\\\clip_utf8.ps1\" -File \"C:\\\\Users\\\\kawas\\\\Documents\\\\claude-code-for-it-consulting\\\\tweet_draft.txt\")",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(python:*)",
+      "Bash(python3:*)",
+      "Bash(py --version)",
+      "Bash(py:*)",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\kawas\\\\.claude\\\\clip_utf8.ps1\" -File \"C:\\\\Users\\\\kawas\\\\Documents\\\\claude-code-for-it-consulting\\\\x_article_ads_ready.txt\")",
+      "Bash(start:*)",
+      "Bash(node:*)",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\kawas\\\\.claude\\\\clip_utf8.ps1\" -File \"/tmp/quote_tweet.txt\")",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\kawas\\\\.claude\\\\clip_utf8.ps1\" -File \"C:\\\\Users\\\\kawas\\\\Documents\\\\claude-code-for-it-consulting\\\\tmp_tweet.txt\")"
     ]
   }
 }

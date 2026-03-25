@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1200px;
+    height: 480px;
+    background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #1a2332 100%);
+    display: flex;
+    align-items: center;
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+    overflow: hidden;
+    position: relative;
+  }
+  .bg-pattern {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image:
+      radial-gradient(circle at 15% 75%, rgba(56, 189, 248, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 85% 25%, rgba(168, 85, 247, 0.08) 0%, transparent 50%);
+  }
+  .left {
+    position: relative;
+    z-index: 1;
+    width: 600px;
+    padding-left: 50px;
+  }
+  .right {
+    position: relative;
+    z-index: 1;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tag {
+    display: inline-block;
+    background: rgba(56, 189, 248, 0.15);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    color: #38bdf8;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px 16px;
+    border-radius: 20px;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
+  }
+  h1 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1.4;
+    margin-bottom: 18px;
+    letter-spacing: -0.5px;
+  }
+  h1 .accent {
+    color: #38bdf8;
+  }
+  .subtitle {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .terminal {
+    width: 440px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 20px;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #a0a0a0;
+  }
+  .terminal-header {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 14px;
+  }
+  .dot { width: 11px; height: 11px; border-radius: 50%; }
+  .dot-red { background: #ff5f56; }
+  .dot-yellow { background: #ffbd2e; }
+  .dot-green { background: #27c93f; }
+  .terminal .prompt { color: #27c93f; }
+  .terminal .cmd { color: #e0e0e0; }
+  .terminal .output { color: #38bdf8; }
+  .terminal .warn { color: #ffbd2e; }
+  .terminal .ok { color: #27c93f; }
+  .section { margin-top: 8px; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 8px; }
+</style>
+</head>
+<body>
+  <div class="bg-pattern"></div>
+  <div class="left">
+    <div class="tag">Claude Code × 広告運用</div>
+    <h1>
+      広告運用を<span class="accent">コードで自動化</span><br>
+      したら世界変わった
+    </h1>
+    <div class="subtitle">クリエイティブ自動生成 / 配信監視 / レポート全自動</div>
+  </div>
+  <div class="right">
+    <div class="terminal">
+      <div class="terminal-header">
+        <div class="dot dot-red"></div>
+        <div class="dot dot-yellow"></div>
+        <div class="dot dot-green"></div>
+      </div>
+      <div><span class="prompt">$</span> <span class="cmd">node export.mjs</span></div>
+      <div><span class="output">9枚のクリエイティブを生成中...</span></div>
+      <div><span class="ok">✓ 全バリエーション書き出し完了</span></div>
+      <div class="section"></div>
+      <div><span class="prompt">⏰</span> <span class="cmd">GitHub Actions (30min)</span></div>
+      <div><span class="output">Meta API → 配信ステータス取得</span></div>
+      <div><span class="warn">⚠ CPC ¥82 → アラート送信</span></div>
+      <div><span class="ok">✓ LINE通知完了</span></div>
+      <div class="section"></div>
+      <div><span class="prompt">📊</span> <span class="cmd">日次レポート 19:00</span></div>
+      <div><span class="ok">✓ LINEグループに自動送信</span></div>
+    </div>
+  </div>
+</body>
+</html>
